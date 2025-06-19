@@ -14,7 +14,7 @@ export default function Home() {
       {/* the img with circle cutout */}
       <div className="relative z-10 flex flex-col md:flex-row items-center gap-10 max-w-6xl mx-auto">
         <img
-          src="/Self-img.jpg"
+          src="Self-img.jpg"
           alt="Samantha Flores"
           className="w-[39rem] h-[39rem] object-cover rounded-full shadow-md"/>
 
