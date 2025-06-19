@@ -1,3 +1,5 @@
+import selfShot from '../images/Self-img.jpg'; 
+
 export default function Home() {
   return (
     <section
@@ -14,7 +16,7 @@ export default function Home() {
       {/* the img with circle cutout */}
       <div className="relative z-10 flex flex-col md:flex-row items-center gap-10 max-w-6xl mx-auto">
         <img
-          src="Self-img.jpg"
+          src={selfShot}
           alt="Samantha Flores"
           className="w-[39rem] h-[39rem] object-cover rounded-full shadow-md"/>
 
@@ -31,24 +33,32 @@ export default function Home() {
               I'm a recent UC Berkeley graduate in Electrical Engineering and Computer Science.
               My education had been a difficult journey but my passion for innovation and creativity
               has kept me hooked in pursuing a career in technology. I am a STEM enthusiast.
-              I hope to join a welcoming community and continue to create. <br /> And lastly ... Go Bears!
+              I hope to join a welcoming community and continue to create. <br /> And lastly ... Go Bears! 🐻
             </p>
           </div>
 
           {/* quick buttons to projects and about */}
-          <div className="flex justify-center gap-4 pt-2">
-            <a href="#about">
-              <p className="bg-gray-500 text-white px-6 py-3 rounded-full font-medium hover:bg-pink-600 transition text-center">
-                Get to know me more
-              </p>
-            </a>
-            <a href="#projects">
-              <p className="bg-gray-500 text-white px-6 py-3 rounded-full font-medium hover:bg-pink-600 transition text-center">
-                Look at my work
+          <div className="flex flex-col items-center gap-4 pt-2">
+
+            <div className="flex gap-4">
+              <a href="#about">
+                <p className="bg-gray-500 text-white px-6 py-3 rounded-full font-medium hover:bg-pink-600 transition text-center min-w-[180px]">
+                  Get to know me more
+                </p>
+              </a>
+              <a href="#projects">
+                <p className="bg-gray-500 text-white px-6 py-3 rounded-full font-medium hover:bg-pink-600 transition text-center min-w-[180px]">
+                  Look at my work
+                </p>
+              </a>
+            </div>
+
+            <a href={`${process.env.PUBLIC_URL}/sf-resume.pdf`} target="_blank" rel="noopener noreferrer">
+              <p className="bg-gray-500 text-white px-6 py-3 rounded-full font-medium hover:bg-pink-600 transition text-center min-w-[180px]">
+                View My Resume
               </p>
             </a>
           </div>
-
 
         </div>
       </div>

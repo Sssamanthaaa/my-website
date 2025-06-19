@@ -1,3 +1,10 @@
+import profileImg from '../images/IMG_8451.png';
+import roboticsImg from '../images/IMG_3903.png';
+import teachingImg from '../images/Image_20250611_201617_234.jpg';
+import hikingImg from '../images/IMG_3152.png';
+import novaImg from '../images/IMG_1859.png';
+import familyImg from '../images/IMG_8468.png';
+
 export default function AboutMe() {
   {/* everything here is a mess beware */}
 
@@ -18,12 +25,14 @@ export default function AboutMe() {
               I enjoy working with others and want to find a place where collaboration is encouraged.
             </p>
           </div>
-          <img src="IMG_8451.png" alt="Profile" className="w-60 rounded-lg shadow-md ml-auto" />
+          <img src={profileImg} alt="Profile" className="w-60 rounded-lg shadow-md ml-auto" />
         </div>
 
         {/* robotics stuff */}
-        <div className="flex flex-col md:flex-row md:items-center gap-6 max-w-5xl mx-auto">
-          <div className="md:w-2/3 space-y-4">
+        <div className="flex flex-col md:flex-row md:items-start md:justify-between w-full gap-6">
+          
+          <div className="md:w-2/3 space-y-4 md:order-2">
+          
             <p className="text-gray-800 text-xl leading-relaxed">
               I am super grateful that I found the robotics community at UC Berkeley.
               College can be overwhelming and a never-ending cycle of readings and study
@@ -36,12 +45,12 @@ export default function AboutMe() {
               during one of my favorite classes at Cal called 106a 🦾.
             </p>
           </div>
-          <img src="IMG_3903.png" alt="Robotics" className="w-60 rounded-lg shadow-md ml-auto" />
+          <img src={roboticsImg} alt="Robotics" className="w-60 rounded-lg shadow-md md:order-1" />
         </div>
 
         {/* recap about teaching experience */}
-        <div className="flex flex-col md:flex-row md:items-start md:justify-between w-full gap-6" >
-          <div className="md:w-2/3 space-y-4 md:order-2">
+        <div className="flex flex-col md:flex-row md:items-center gap-6 max-w-5xl mx-auto" >
+          <div className="md:w-2/3 space-y-4">
             <p className="text-gray-800 text-xl leading-relaxed">
               Within my four years at UC Berkeley, I have taught STEM-related courses to both high school 
               and college students. I love being an engineer, and it is through education that I have the 
@@ -52,9 +61,9 @@ export default function AboutMe() {
             </p>
           </div>
           <img
-            src="Image_20250611_201617_234.jpg"
+            src={teachingImg}
             alt="Teaching"
-            className="w-60 md:order-1 rounded-lg shadow-md"/>
+            className="w-60 ml-auto rounded-lg shadow-md"/>
         </div>
 
         {/* who am i outside */}
@@ -68,9 +77,9 @@ export default function AboutMe() {
             Hispanic family 🇲🇽, so we are always celebrating someone's birthday!
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <img src="IMG_3152.png" alt="Hiking" className="rounded-lg shadow-md" />
-            <img src="IMG_1859.png" alt="Dog Nova" className="rounded-lg shadow-md" />
-            <img src="IMG_8468.png" alt="Family" className="rounded-lg shadow-md" />
+            <img src={hikingImg} alt="Hiking" className="rounded-lg shadow-md" />
+            <img src={novaImg} alt="Dog Nova" className="rounded-lg shadow-md" />
+            <img src={familyImg} alt="Family" className="rounded-lg shadow-md" />
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaFileAlt } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 
 export default function LinkBar() {
@@ -25,6 +25,14 @@ export default function LinkBar() {
         className="w-12 h-12 flex items-center justify-center bg-gray-800 text-white rounded-full shadow hover:bg-pink-600 transition"
       >
         <HiOutlineMail className="text-xl" />
+      </a>
+      <a
+        href={`${process.env.PUBLIC_URL}/sf-resume.pdf`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-12 h-12 flex items-center justify-center bg-gray-800 text-white rounded-full shadow hover:bg-pink-600 transition"
+      >
+        <FaFileAlt className="text-xl" />
       </a>
     </div>
   );
