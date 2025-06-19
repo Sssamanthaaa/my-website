@@ -18,7 +18,7 @@ export default function AboutMe() {
               I enjoy working with others and want to find a place where collaboration is encouraged.
             </p>
           </div>
-          <img src="/IMG_8451.png" alt="Profile" className="w-60 rounded-lg shadow-md ml-auto" />
+          <img src="IMG_8451.png" alt="Profile" className="w-60 rounded-lg shadow-md ml-auto" />
         </div>
 
         {/* robotics stuff */}
@@ -36,7 +36,7 @@ export default function AboutMe() {
               during one of my favorite classes at Cal called 106a 🦾.
             </p>
           </div>
-          <img src="/IMG_3903.png" alt="Robotics" className="w-60 rounded-lg shadow-md ml-auto" />
+          <img src="IMG_3903.png" alt="Robotics" className="w-60 rounded-lg shadow-md ml-auto" />
         </div>
 
         {/* recap about teaching experience */}
@@ -52,7 +52,7 @@ export default function AboutMe() {
             </p>
           </div>
           <img
-            src="/Image_20250611_201617_234.jpg"
+            src="Image_20250611_201617_234.jpg"
             alt="Teaching"
             className="w-60 md:order-1 rounded-lg shadow-md"/>
         </div>
@@ -68,9 +68,9 @@ export default function AboutMe() {
             Hispanic family 🇲🇽, so we are always celebrating someone's birthday!
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <img src="/IMG_3152.png" alt="Hiking" className="rounded-lg shadow-md" />
-            <img src="/IMG_1859.png" alt="Dog Nova" className="rounded-lg shadow-md" />
-            <img src="/IMG_8468.png" alt="Family" className="rounded-lg shadow-md" />
+            <img src="IMG_3152.png" alt="Hiking" className="rounded-lg shadow-md" />
+            <img src="IMG_1859.png" alt="Dog Nova" className="rounded-lg shadow-md" />
+            <img src="IMG_8468.png" alt="Family" className="rounded-lg shadow-md" />
           </div>
         </div>
       </div>

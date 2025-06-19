@@ -5,7 +5,7 @@ export default function Navbar() {
           {/* logo for now should look into updating doesnt really fit page */}
           <div className="text-xl font-bold">
           <a href="#home"> 
-            <img src="/sf-logo.png"alt="SF Logo"className="h-10 w-10 object-contain scale-150 cursor-pointer"/> </a>          
+            <img src="sf-logo.png"alt="SF Logo"className="h-10 w-10 object-contain scale-150 cursor-pointer"/> </a>          
           </div>
 
           {/* navigation to the about me, projects, and contact me. perhaps add resume tab or achievements or roles */}
