@@ -1,15 +1,29 @@
 {
   "files": {
-    "main.css": "/my-website/static/css/main.d3f7df4c.css",
-    "main.js": "/my-website/static/js/main.f157248f.js",
+    "main.css": "/my-website/static/css/main.02b448a4.css",
+    "main.js": "/my-website/static/js/main.29c5a9db.js",
     "static/js/453.195b869a.chunk.js": "/my-website/static/js/453.195b869a.chunk.js",
+    "static/media/IMG_8451.png": "/my-website/static/media/IMG_8451.4ded2792acd21df4f780.png",
+    "static/media/IMG_8468.png": "/my-website/static/media/IMG_8468.ee0919fda9bf681d1370.png",
+    "static/media/IMG_1859.png": "/my-website/static/media/IMG_1859.fc0221f4e8ee2e6f392f.png",
+    "static/media/IMG_3152.png": "/my-website/static/media/IMG_3152.fd0e55aa017dfefe1bc0.png",
+    "static/media/IMG_3903.png": "/my-website/static/media/IMG_3903.c4faf5335699bd908de3.png",
+    "static/media/Image_20250611_201617_234.jpg": "/my-website/static/media/Image_20250611_201617_234.4f1ad084962e2b925514.jpg",
+    "static/media/Genius.png": "/my-website/static/media/Genius.a0d72830eed093e164c0.png",
+    "static/media/Slayer.png": "/my-website/static/media/Slayer.7dd27a8d63d1d9fe6264.png",
+    "static/media/Sawyer-stack-attack.png": "/my-website/static/media/Sawyer-stack-attack.c9efb3ce452ccbaae9ac.png",
+    "static/media/cs161-logo.png": "/my-website/static/media/cs161-logo.4d7b0abcc03b135c0cfb.png",
+    "static/media/test3.gif": "/my-website/static/media/test3.0fbd66ab218d949a1124.gif",
+    "static/media/Self-img.jpg": "/my-website/static/media/Self-img.49394074bc2b4263054e.jpg",
+    "static/media/sf-logo.png": "/my-website/static/media/sf-logo.5b3788b846389f588a98.png",
+    "static/media/baby-on-the-go-LOGO.png": "/my-website/static/media/baby-on-the-go-LOGO.df8b2e5bd2a2f65b1823.png",
     "index.html": "/my-website/index.html",
-    "main.d3f7df4c.css.map": "/my-website/static/css/main.d3f7df4c.css.map",
-    "main.f157248f.js.map": "/my-website/static/js/main.f157248f.js.map",
+    "main.02b448a4.css.map": "/my-website/static/css/main.02b448a4.css.map",
+    "main.29c5a9db.js.map": "/my-website/static/js/main.29c5a9db.js.map",
     "453.195b869a.chunk.js.map": "/my-website/static/js/453.195b869a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3f7df4c.css",
-    "static/js/main.f157248f.js"
+    "static/css/main.02b448a4.css",
+    "static/js/main.29c5a9db.js"
   ]
 }
