@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-website/static/css/main.c02cc75e.css",
-    "main.js": "/my-website/static/js/main.1aec1ca1.js",
+    "main.js": "/my-website/static/js/main.de617259.js",
     "static/js/453.195b869a.chunk.js": "/my-website/static/js/453.195b869a.chunk.js",
     "static/media/IMG_8451.png": "/my-website/static/media/IMG_8451.4ded2792acd21df4f780.png",
     "static/media/IMG_8468.png": "/my-website/static/media/IMG_8468.ee0919fda9bf681d1370.png",
@@ -19,11 +19,11 @@
     "static/media/baby-on-the-go-LOGO.png": "/my-website/static/media/baby-on-the-go-LOGO.df8b2e5bd2a2f65b1823.png",
     "index.html": "/my-website/index.html",
     "main.c02cc75e.css.map": "/my-website/static/css/main.c02cc75e.css.map",
-    "main.1aec1ca1.js.map": "/my-website/static/js/main.1aec1ca1.js.map",
+    "main.de617259.js.map": "/my-website/static/js/main.de617259.js.map",
     "453.195b869a.chunk.js.map": "/my-website/static/js/453.195b869a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c02cc75e.css",
-    "static/js/main.1aec1ca1.js"
+    "static/js/main.de617259.js"
   ]
 }
