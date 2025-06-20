@@ -17,7 +17,7 @@ export default function AboutMe() {
           <div className="md:w-2/3 space-y-4">
             <h2 className="text-2xl md:text-4xl font-bold mb-4">About me</h2>
             <p className="text-gray-800 text-xl leading-relaxed">
-              Hey, I am Samantha. I was born and raised in Oakland, California.
+              I was born and raised in Oakland, California.
               I am a first-gen college graduate from UC Berkeley in Electrical Engineering
               and Computer Science. I am highly interested in robotics and user interface
               (UI) design.  I am currently in search of a full-time
@@ -38,10 +38,10 @@ export default function AboutMe() {
               College can be overwhelming and a never-ending cycle of readings and study
               sessions, but it was through robotics that I got hands-on experience. I
               participated in combat robotics with an amazing club on campus called Robobears.
-              I got the opportunity to travel to New York for the first time and fight robots,
-              two of my lifelong goals! I was given the opportunity to be facilator for a class about 
-              manficutring and designing robots for three years and was the president of the robotics club 
-              for 2 years. I also got to work on big industry-standard robots
+              got the opportunity to travel to New York for the first time and fight robots,
+             two of my lifelong goals! I was given the opportunity to be a facilitator for a class about
+             manufacturing and designing robots for three years, and was the president of the robotics club
+             for 2 years. I also got to work on big industry-standard robots
               during one of my favorite classes at Cal called 106a 🦾.
             </p>
           </div>

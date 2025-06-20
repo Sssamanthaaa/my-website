@@ -1,4 +1,5 @@
 export default function Resume() {
+    {/* fix the padding at the bottom of the page of the mbile page */}
   return (
     <section className="min-h-screen pt-32 px-10 md:px-20 bg-gray-100">
       <div className="max-w-4xl mx-auto text-center">

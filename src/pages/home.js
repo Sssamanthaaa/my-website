@@ -1,5 +1,5 @@
 import selfShot from '../images/Self-img.jpg'; 
-
+{/* fix the paddig on the top of the page of the mobile */}
 export default function Home() {
   return (
     <section
@@ -35,7 +35,7 @@ export default function Home() {
             </h1>
             <p className="text-large text-gray-800 max-w-2xl leading-relaxed text-justify">
               I'm a recent UC Berkeley graduate in Electrical Engineering and Computer Science.
-              My education had been a difficult journey but my passion for innovation and creativity
+              My education has been a difficult journey but my passion for innovation and creativity
               has kept me hooked in pursuing a career in technology. I am a STEM enthusiast.
               I hope to join a welcoming community and continue to create. <br /> And lastly ... Go Bears! 🐻
             </p>

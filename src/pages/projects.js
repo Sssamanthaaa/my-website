@@ -16,8 +16,8 @@ export default function Projects() {
         <p className="text-gray-800 text-xl leading-relaxed">
         I have a mixture of personal projects, academic projects, to curriculum projects. 
         They also range from independent, pair, to group projects. Some of the projects 
-        have my code under a private repo and if you would like to see my work more
-         thouroughly feel free to reach out so I give you access. 😁         </p>
+        have my code under a private repo and if you would like to see my work more 
+        thoroughly feel free to reach out so I give you access. 😁         </p>
       </div>
 
       <div className="space-y-6 max-w-4xl mx-auto">
@@ -91,7 +91,7 @@ export default function Projects() {
         <ProjectCard
           title="Berkeley Lab k-12 Autonmous Robot"
           icon={berkeleyImg}
-          github="https://github.com/Sssamanthaaa/LBNL-SAGE24"
+          github="https://github.com/Sssamanthaaa/LBNL-UltraSonicRobot-SAGE"
           link = "https://docs.google.com/document/d/1nQrLKBx4-WxRqAirzwuitr7w4bXJCsgjGqO7zh6QiS8/edit?usp=sharing"
           description= {`A collaborative project as part of a cyber secutirty class, 
           where we designed a file sharing system that creates a safe environment for 
