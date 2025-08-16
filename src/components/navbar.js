@@ -5,6 +5,7 @@ import sfLogo from '../images/logo-full.png';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [showLogo, setShowLogo] = useState(false);
+  const [isHome, setIsHome] = useState(true);
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -14,6 +15,7 @@ export default function Navbar() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         setShowLogo(!entry.isIntersecting);
+        setIsHome(entry.isIntersecting);
       },
       {
         threshold: 0.6,
@@ -32,11 +34,10 @@ export default function Navbar() {
   return (
     <nav
       style={{ fontFamily: 'Impact, Charcoal, sans-serif' }}
-      className="fixed top-0 left-0 w-full z-40 bg-white"
+      className={`fixed top-0 left-0 w-full z-40 transition-colors duration-300 ${isHome ? 'bg-white' : 'bg-gray-100'}`}
     >
       <div className="w-full px-6 py-4 flex items-center relative">
-
-        {/* ✅ Floating logo that appears when not on home */}
+        {/* logo that appears when not on home */}
         {showLogo && (
           <div className="absolute -top-1 left-6 z-50">
             <a href="#home" className="block">
@@ -49,7 +50,7 @@ export default function Navbar() {
           </div>
         )}
 
-        {/* ✅ Right-aligned nav links */}
+        {/* nav links */}
         <div className="ml-auto">
           <ul className="hidden md:flex space-x-6 text-base font-medium">
             <li><a href="#about" className="font-medium text-gray-800 hover:text-pink-600">About me</a></li>
@@ -66,7 +67,7 @@ export default function Navbar() {
           </ul>
         </div>
 
-        {/* ✅ Mobile menu toggle */}
+        {/* mobile menu toggle */}
         <div className="md:hidden ml-auto">
           <button onClick={toggleMenu} aria-label="Toggle menu">
             {isOpen ? <FiX className="text-2xl" /> : <FiMenu className="text-2xl" />}
@@ -74,7 +75,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* ✅ Mobile dropdown menu */}
+      {/* mobile dropdown menu */}
       {isOpen && (
         <div className="md:hidden px-6 pb-4 space-y-4">
           <a href="#about" className="block text-gray-800 font-medium hover:text-pink-600">About me</a>

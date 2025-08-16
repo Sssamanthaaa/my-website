@@ -3,13 +3,18 @@ export default function Resume() {
   return (
     <section className="min-h-screen pt-32 px-10 md:px-20 bg-gray-100">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">My Resume</h2>
+        <h2
+          className="text-4xl md:text-6xl font-bold mb-6"
+          style={{ fontFamily: 'Impact, Charcoal, sans-serif' }}
+        >
+          My Resume
+        </h2>
 
         {/* Embed PDF in an iframe */}
         <iframe
           src={`${process.env.PUBLIC_URL}/sf-resume.pdf`}
           width="100%"
-          height="700px"
+          height="400px" // changed from 700px to 400px
           title="Resume PDF"
           className="border rounded shadow-md"
         ></iframe>

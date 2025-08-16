@@ -1,0 +1,102 @@
+import babyLogo from "../images/baby-on-the-go-LOGO.png";
+import stackImg from "../images/Sawyer-stack-attack.png";
+import geniusImg from "../images/Genius.png";
+import robotGif from "../images/test3.gif";
+import csLogo from "../images/cs161-logo.png";
+import slasherImg from "../images/Slayer.png";
+import berkeleyImg from "../images/berkeley-lab-log.png";
+
+const projects = [
+  {
+    title: "Baybe on the Go",
+    icon: babyLogo,
+    github: "https://github.com/gonzaIke/Baybe-On-The-Go",
+    link: "https://your-site.com",
+    intro: "Baybe on the Go was a semester-long UI design project built by a team of five to support parents traveling with young children. Our goal was to create a platform that streamlined packing and travel documentation using AI.",
+    team: "I served as both the design lead and implementation contributor. I organized and tracked group progress throughout the project while also managing core features myself.",
+    technical: "I designed and implemented the document upload and categorization page in React, integrating an AI API that we trained to scan files and automatically sort them into categories for quick access.",
+    challenges: "The most challenging part was designing a document workflow that was both technically feasible and user friendly, ensuring accuracy in scanning while maintaining a seamless experience for parents.",
+    strategy: "I worked extensively in Figma to create wireframes, high fidelity prototypes, and visual assets. I also led interviews and market research to better understand our target users needs and used that feedback to refine the design.",
+    presentation: "I produced all demo presentation videos to showcase functionality and design flow.",
+    outcome: "This project gave me end to end experience in design research, AI integration, and frontend development while collaborating within a multidisciplinary team.",
+  },
+  {
+    title: "Stack Attack",
+    icon: stackImg,
+    github: "https://github.com/tsg132/eecs106a-final",
+    link: "https://tsg132.github.io/106final/",
+    intro: "Stack Attack was a robotics final project where my team of four programmed a Sawyer robotic arm to detect, pick up, and stack blocks into different formations including pyramids, vertical towers, and horizontal lines.",
+    team: "While we all contributed evenly to the coding, I focused heavily on the logic behind stacking and optimizing the drop-off positions of each block to maximize precision and stability.",
+    technical: "We used ROS to program the Sawyer arm, coordinating its vision, motion planning, and gripper control.",
+    challenges: "One of the biggest challenges was handling gripper collisions and calibration. Even a small offset could cause the arm to miss a pickup, rotate a block incorrectly, or misalign the drop, which would compromise the entire stack. I developed solutions to refine positioning and compensate for these errors.",
+    strategy: "Although I was initially responsible for pyramid stacking, I realized that the logic behind vertical and horizontal stacking could be unified. By adapting my approach, I was able to reuse and optimize the same core logic across all three stacking strategies.",
+    presentation: "We presented the project through a live final demo and recorded video, and we also created a website to showcase our work and results.",
+    outcome: "The project demonstrated precise robotic manipulation under real-world constraints and won 2nd place in the Save H2O competition.",
+  },
+  {
+    title: "Genieus",
+    icon: geniusImg,
+    link: "https://www.figma.com/slides/a2Hc9phJ5H9VNsPPCvjIlU/DesInv_Final_Project?node-id=127-8&t=iZBeRA4LAHksPuSp-1",
+    video: "https://drive.google.com/drive/folders/1edP2iuz31XDyeQ6B9gg0e3rPxhZY2q4-?usp=drive_link",
+    intro: "Genieus was a design innovation project developed by a team of five with diverse majors, where we set out to imagine an adaptive musical vase that could elevate a space based on the room's detected energy.",
+    team: "I was the only EECS major on the team, which allowed me to bring a technical and consumer-focused perspective to the design process. I guided the group in thinking about how such a product might realistically appeal to users and align with market expectations.",
+    technical: "This was a Figma-based UX project rather than a physical prototype. We focused on creating interactive wireframes and design flows that demonstrated how the product might work, from user interaction to environmental adaptation.",
+    challenges: "One of the most difficult aspects of this project was balancing creativity with feasibility. Because Genieus was a conceptual design, it was easy to imagine features that sounded futuristic but difficult to visualize in practice. I often pushed the team to think critically about whether the design was believable and how it might actually be implemented.",
+    strategy: "We thought about room energy as potential use cases — for example, relaxing versus social environments — and explored how AI could adapt to those contexts to personalize the user experience. My contributions focused on framing these use cases and ensuring they translated into a compelling and realistic design.",
+    presentation: "We delivered a live demo of the concept, produced a video that showcased and advertised how the product could be used, and created a presentation deck to clearly communicate our vision.",
+    outcome: "The project was received as a strong conceptual design that explored the intersection of AI, music, and user experience. It challenged us to consider the boundary between innovation and feasibility in product design.",
+  },
+  {
+    title: "Robotics Labs",
+    icon: robotGif,
+    github: "https://github.com/Sssamanthaaa/106a-labs",
+    intro: "As part of UC Berkeley's robotics coursework, I completed a series of labs working with both the TurtleBot and the Sawyer robotic arm to develop core robotics skills.",
+    team: "The labs were completed in pairs, where I collaborated closely with a partner to divide tasks and troubleshoot problems. My prior experience with robotics allowed me to take on a guiding role, helping break down problems before coding and supporting debugging throughout the process.",
+    technical: "Half of the labs were completed using the TurtleBot with a LiDAR sensor, where we implemented SLAM for mapping and navigation. The other half focused on the Sawyer robot, where we programmed motion and manipulation tasks. Most of the coding was done in Python within ROS, integrating perception, mapping, and control.",
+    challenges: "Debugging ROS nodes and understanding how the many subsystems connected together was one of the most difficult parts. Even small errors could cascade through the system, requiring us to carefully trace issues across perception, planning, and control.",
+    strategy: "To overcome these challenges, we relied heavily on testing in simulation before deploying to hardware, and I also created code-level test cases to validate specific functions. My partner and I worked systematically to break down each problem into smaller steps before implementing solutions in ROS.",
+    presentation: "Each lab culminated in practical demonstrations of the robots completing mapping and manipulation tasks, showing our implementations in action.",
+    outcome: "These labs gave me hands-on experience with ROS fundamentals, robotic perception, LiDAR sensors, SLAM, path planning, and debugging real robotic systems. They also served as a foundation for my later project, Stack Attack, where I applied many of these skills to a larger robotics challenge.",
+  },
+  {
+    title: "Secure File System",
+    icon: csLogo,
+    github: "https://github.com/cs161-students/sp24-proj2-161-proj2-angela-samantha",
+    link: "https://docs.google.com/document/d/1SuW6TJbPMyR9eArrKUhR7heeISdoPSjoRmZTIizFxSE/edit?usp=sharing",
+    intro: "Secure File System was a CS161 course project where I worked in a pair to design and implement a secure, end to end file sharing platform that ensured confidentiality, integrity, and controlled access even in the presence of adversaries.",
+    team: "My partner and I co coded all parts of the system rather than dividing modules, collaborating on design, implementation, testing, and documentation to ensure the final system worked seamlessly.",
+    technical: "We implemented the cryptography ourselves, writing code for Argon2 key derivation, public and private keypair generation, hybrid encryption, digital signatures, HMAC verification, and secure storage. The system supported user authentication, encrypted file storage, invitation based sharing, access revocation, and linked list style file appending for version control.",
+    challenges: "The hardest part was reasoning about how to protect the system against increasingly complex attacks. Each new defense introduced another layer of protection, and thinking through how these layers interacted quickly became confusing. Ensuring that our layered defenses still worked cohesively without creating new vulnerabilities was one of the most intellectually challenging parts of the project.",
+    strategy: "We began with a detailed design document that mapped out the threat model and data structures, then iterated through coding and testing. I frequently created helper functions to validate encryption, HMACs, and access controls in isolation before integrating them into the broader system.",
+    presentation: "The final deliverables included a comprehensive design document and a fully coded system that was tested for security, correctness, and usability.",
+    outcome: "This project gave me a deep understanding of how to move from cryptographic primitives to a secure system design. It reinforced principles of secure coding, key management, and adversarial thinking while strengthening my debugging skills in complex, security sensitive codebases.",
+  },
+  {
+    title: "Slasher",
+    icon: slasherImg,
+    github: "https://github.com/Sssamanthaaa/Slasher-CombatRobot",
+    link: "https://www.figma.com/slides/WBrLHsl6m7Y78THtMMibV1/Project2?node-id=1-114&t=IWy800TiFSIKznJP-1",
+    intro: "Slasher was a solo combat robotics project where I designed, fabricated, and competed with a three pound combat robot at the National Havoc Robotics League.",
+    team: "This was an individual project where I handled every stage of the design and build process from CAD modeling to fabrication and assembly.",
+    technical: "I created the design in CAD and manufactured the robot using the waterjet, laser cutter, and mill at UC Berkeley's Jacobs Institute. The robot featured a horizontal spinning weapon, which I designed to balance offensive power with structural resilience.",
+    challenges: "The most difficult aspects were durability and weapon power. A combat robot must survive repeated high energy impacts while still delivering powerful attacks, and ensuring this balance was one of the hardest engineering challenges.",
+    strategy: "I developed multiple prototypes, beginning with 3D models and iterating through different designs until I arrived at a configuration that optimized both performance and survivability.",
+    presentation: "Slasher competed at NHRL, where it was tested in real combat scenarios against other robots.",
+    outcome: "This project taught me advanced skills in CAD design, fabrication, and machining, as well as how to think critically about design trade offs when creating a system that must withstand extreme real world conditions.",
+  },
+  {
+    title: "LBNL Autonomous Bot",
+    icon: berkeleyImg,
+    github: "https://github.com/Sssamanthaaa/LBNL-UltraSonicRobot-SAGE",
+    link: "https://docs.google.com/document/d/1nQrLKBx4-WxRqAirzwuitr7w4bXJCsgjGqO7zh6QiS8/edit?usp=sharing",
+    intro: "LBNL Autonomous Bot was a solo project I developed as part of my role at Lawrence Berkeley National Laboratory to support K-12 STEM outreach. The goal was to create an educational robot that introduced students to core concepts in engineering and robotics while being reproducible for classroom use.",
+    team: "I worked independently on this project, handling everything from design to teaching. I was responsible for building the robot, documenting the process, and preparing materials that could be used by students and teachers in future years.",
+    technical: "I built the robot using Arduino, ultrasonic sensors, CAD design, and 3D printing for custom parts. The behavior of the robot was programmed in C++, and I structured the code to be modular and easy for students to understand and modify.",
+    challenges: "The hardest part was making the project approachable for high school students while still teaching meaningful engineering concepts. It required me to think like a beginner, simplify complex technical ideas, and decide which topics were essential for students to understand the full picture without overwhelming them.",
+    strategy: "I focused on reproducibility and learning outcomes. I designed the robot so students could assemble it in only a few days while still being exposed to real engineering principles such as sensors, perception, and control. To ensure clarity, I created supporting documentation and broke the material into digestible steps that could be followed in a classroom setting.",
+    presentation: "I taught the project to students directly in classrooms, guiding them through the build and programming process. I also created documentation and resources so that teachers could continue to use the project for future classes.",
+    outcome: "Many students who completed the project expressed interest in pursuing robotics further, and the documentation ensured its continued impact in K-12 outreach. This project strengthened my technical expertise in Arduino, sensors, CAD, and C++, while also improving my ability to teach, simplify complex topics, and inspire the next generation of engineers.",
+  },
+];
+
+export default projects;
