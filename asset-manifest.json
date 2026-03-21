@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-website/static/css/main.de13c7cb.css",
-    "main.js": "/my-website/static/js/main.595c4a01.js",
+    "main.css": "/my-website/static/css/main.3a684158.css",
+    "main.js": "/my-website/static/js/main.5c77392b.js",
     "static/js/453.195b869a.chunk.js": "/my-website/static/js/453.195b869a.chunk.js",
     "static/media/IMG_8451.png": "/my-website/static/media/IMG_8451.4ded2792acd21df4f780.png",
     "static/media/IMG_8468.png": "/my-website/static/media/IMG_8468.ee0919fda9bf681d1370.png",
@@ -11,7 +11,14 @@
     "static/media/9361730.png": "/my-website/static/media/9361730.9d481732a862c389d94e.png",
     "static/media/Image_20250611_201617_234.jpg": "/my-website/static/media/Image_20250611_201617_234.4f1ad084962e2b925514.jpg",
     "static/media/Genius.png": "/my-website/static/media/Genius.a0d72830eed093e164c0.png",
+    "static/media/notebook.png": "/my-website/static/media/notebook.aaf8d904fad336df833f.png",
+    "static/media/glasses.png": "/my-website/static/media/glasses.2affca311b641876721c.png",
+    "static/media/purse.png": "/my-website/static/media/purse.26eb580275f49824a4d7.png",
+    "static/media/robot.png": "/my-website/static/media/robot.e6b70a6578b814cd04f1.png",
+    "static/media/laptop.png": "/my-website/static/media/laptop.d96ca35e0c0b09df7b7e.png",
     "static/media/homescreen.png": "/my-website/static/media/homescreen.a734efd23918fde21b9a.png",
+    "static/media/apple.png": "/my-website/static/media/apple.c44c4303f44432dc5713.png",
+    "static/media/headphones.png": "/my-website/static/media/headphones.3c0529a0666fdf0e28b9.png",
     "static/media/Slayer.png": "/my-website/static/media/Slayer.7dd27a8d63d1d9fe6264.png",
     "static/media/Sawyer-stack-attack.png": "/my-website/static/media/Sawyer-stack-attack.c9efb3ce452ccbaae9ac.png",
     "static/media/Frame 18-1.png": "/my-website/static/media/Frame 18-1.fb6a26bbd9b7f5e0b629.png",
@@ -25,12 +32,12 @@
     "static/media/baby-on-the-go-LOGO.png": "/my-website/static/media/baby-on-the-go-LOGO.df8b2e5bd2a2f65b1823.png",
     "static/media/logo-full.png": "/my-website/static/media/logo-full.9640d47b036dbff9ddc0.png",
     "index.html": "/my-website/index.html",
-    "main.de13c7cb.css.map": "/my-website/static/css/main.de13c7cb.css.map",
-    "main.595c4a01.js.map": "/my-website/static/js/main.595c4a01.js.map",
+    "main.3a684158.css.map": "/my-website/static/css/main.3a684158.css.map",
+    "main.5c77392b.js.map": "/my-website/static/js/main.5c77392b.js.map",
     "453.195b869a.chunk.js.map": "/my-website/static/js/453.195b869a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.de13c7cb.css",
-    "static/js/main.595c4a01.js"
+    "static/css/main.3a684158.css",
+    "static/js/main.5c77392b.js"
   ]
 }
