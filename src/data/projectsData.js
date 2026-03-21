@@ -10,8 +10,8 @@ const projects = [
   {
     title: "Baybe on the Go",
     icon: babyLogo,
-    github: "https://github.com/gonzaIke/Baybe-On-The-Go",
-    link: "https://your-site.com",
+    github: "https://github.com/Sssamanthaaa/Baybe-on-the-go-Website",
+    link: "https://sssamanthaaa.github.io/Baybe-on-the-go-Website/",
     intro: "Baybe on the Go was a semester-long UI design project built by a team of five to support parents traveling with young children. Our goal was to create a platform that streamlined packing and travel documentation using AI.",
     team: "I served as both the design lead and implementation contributor. I organized and tracked group progress throughout the project while also managing core features myself.",
     technical: "I designed and implemented the document upload and categorization page in React, integrating an AI API that we trained to scan files and automatically sort them into categories for quick access.",

@@ -4,9 +4,10 @@ import About from "./pages/about";
 import Projects from "./pages/projects";
 import LinkBar from "./components/linkbar";
 import Resume from "./pages/resume";
+import GoogleFellowship from "./pages/GoogleFellowship";
+import { Route, Routes } from "react-router-dom";
 
-
-function App() {
+function MainPage() {
   return (
     <div className="h-screen overflow-y-scroll snap-y snap-mandatory">
       <LinkBar />
@@ -26,8 +27,17 @@ function App() {
       <section id="resume" className="min-h-screen snap-start">
         <Resume />
       </section>
-    
+
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<MainPage />} />
+      <Route path="/google-fellowship" element={<GoogleFellowship />} />
+    </Routes>
   );
 }
 

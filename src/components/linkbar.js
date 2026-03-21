@@ -1,5 +1,7 @@
 import { FaLinkedin, FaGithub, FaFileAlt } from "react-icons/fa";
+import { GiHandBag } from "react-icons/gi";
 import { HiOutlineMail } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 export default function LinkBar() {
   return (
@@ -34,6 +36,13 @@ export default function LinkBar() {
       >
         <FaFileAlt className="text-xl" />
       </a>
+      <Link
+        to="/google-fellowship"
+        aria-label="Google Fellowship page"
+        className="w-12 h-12 flex items-center justify-center bg-gray-800 text-white rounded-full shadow hover:bg-pink-600 transition"
+      >
+        <GiHandBag className="text-xl" />
+      </Link>
     </div>
   );
 }
