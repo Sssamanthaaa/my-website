@@ -1,15 +1,9 @@
 {
   "files": {
-    "main.css": "/my-website/static/css/main.3a684158.css",
-    "main.js": "/my-website/static/js/main.5c77392b.js",
+    "main.css": "/my-website/static/css/main.9fd5bac6.css",
+    "main.js": "/my-website/static/js/main.8cc6d182.js",
     "static/js/453.195b869a.chunk.js": "/my-website/static/js/453.195b869a.chunk.js",
-    "static/media/IMG_8451.png": "/my-website/static/media/IMG_8451.4ded2792acd21df4f780.png",
-    "static/media/IMG_8468.png": "/my-website/static/media/IMG_8468.ee0919fda9bf681d1370.png",
-    "static/media/IMG_1859.png": "/my-website/static/media/IMG_1859.fc0221f4e8ee2e6f392f.png",
-    "static/media/IMG_3152.png": "/my-website/static/media/IMG_3152.fd0e55aa017dfefe1bc0.png",
-    "static/media/IMG_3903.png": "/my-website/static/media/IMG_3903.c4faf5335699bd908de3.png",
     "static/media/9361730.png": "/my-website/static/media/9361730.9d481732a862c389d94e.png",
-    "static/media/Image_20250611_201617_234.jpg": "/my-website/static/media/Image_20250611_201617_234.4f1ad084962e2b925514.jpg",
     "static/media/Genius.png": "/my-website/static/media/Genius.a0d72830eed093e164c0.png",
     "static/media/notebook.png": "/my-website/static/media/notebook.aaf8d904fad336df833f.png",
     "static/media/glasses.png": "/my-website/static/media/glasses.2affca311b641876721c.png",
@@ -28,16 +22,17 @@
     "static/media/cs161-logo.png": "/my-website/static/media/cs161-logo.4d7b0abcc03b135c0cfb.png",
     "static/media/test3.gif": "/my-website/static/media/test3.0fbd66ab218d949a1124.gif",
     "static/media/clipart1055294.png": "/my-website/static/media/clipart1055294.566cf3bed87eef33727f.png",
-    "static/media/bulletinboard.jpg": "/my-website/static/media/bulletinboard.e5867bd35e3f554583d2.jpg",
     "static/media/baby-on-the-go-LOGO.png": "/my-website/static/media/baby-on-the-go-LOGO.df8b2e5bd2a2f65b1823.png",
     "static/media/logo-full.png": "/my-website/static/media/logo-full.9640d47b036dbff9ddc0.png",
+    "static/media/Wormly-logo.svg": "/my-website/static/media/Wormly-logo.da6dc7297ae85e2e81c06f2178ddee40.svg",
+    "static/media/worm.svg": "/my-website/static/media/worm.c4c239987836209152a73ef3f660fa3f.svg",
     "index.html": "/my-website/index.html",
-    "main.3a684158.css.map": "/my-website/static/css/main.3a684158.css.map",
-    "main.5c77392b.js.map": "/my-website/static/js/main.5c77392b.js.map",
+    "main.9fd5bac6.css.map": "/my-website/static/css/main.9fd5bac6.css.map",
+    "main.8cc6d182.js.map": "/my-website/static/js/main.8cc6d182.js.map",
     "453.195b869a.chunk.js.map": "/my-website/static/js/453.195b869a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a684158.css",
-    "static/js/main.5c77392b.js"
+    "static/css/main.9fd5bac6.css",
+    "static/js/main.8cc6d182.js"
   ]
 }
