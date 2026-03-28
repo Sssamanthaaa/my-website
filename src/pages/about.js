@@ -1,19 +1,18 @@
-import profileImg from '../images/IMG_8451.png';
-import roboticsImg from '../images/IMG_3903.png';
-import teachingImg from '../images/Image_20250611_201617_234.jpg';
-import hikingImg from '../images/IMG_3152.png';
-import novaImg from '../images/IMG_1859.png';
-import familyImg from '../images/IMG_8468.png';
+import { motion } from "framer-motion";
 import AboutTerminal from '../components/terminal.js';
 
 export default function AboutMe() {
-  {/* everything here is a mess beware */}
-
   return (
-    <section className="min-h-screen pt-32 px-10 md:px-20 bg-gray-100">
+    <section className="theme-surface min-h-screen pt-32 px-10 md:px-20">
       <div className="max-w-5xl mx-auto space-y-16">
-        <AboutTerminal 
-        />
+        <motion.div
+          initial={{ opacity: 0, y: 32 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          <AboutTerminal />
+        </motion.div>
       </div>
     </section>
   );

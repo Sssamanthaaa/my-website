@@ -10,7 +10,8 @@ export default function LinkBar() {
         href="https://www.linkedin.com/in/samantha-flores-630292182/"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-12 h-12 flex items-center justify-center bg-gray-800 text-white rounded-full shadow hover:bg-pink-600 transition"
+        title="LinkedIn"
+        className="theme-icon-button w-12 h-12 flex items-center justify-center rounded-full shadow transition"
       >
         <FaLinkedin className="text-xl" />
       </a>
@@ -18,13 +19,15 @@ export default function LinkBar() {
         href="https://github.com/Sssamanthaaa"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-12 h-12 flex items-center justify-center bg-gray-800 text-white rounded-full shadow hover:bg-pink-600 transition"
+        title="GitHub"
+        className="theme-icon-button w-12 h-12 flex items-center justify-center rounded-full shadow transition"
       >
         <FaGithub className="text-xl" />
       </a>
       <a
         href="mailto:samantha.flores@berkeley.edu"
-        className="w-12 h-12 flex items-center justify-center bg-gray-800 text-white rounded-full shadow hover:bg-pink-600 transition"
+        title="Email me"
+        className="theme-icon-button w-12 h-12 flex items-center justify-center rounded-full shadow transition"
       >
         <HiOutlineMail className="text-xl" />
       </a>
@@ -32,14 +35,16 @@ export default function LinkBar() {
         href={`${process.env.PUBLIC_URL}/sf-resume.pdf`}
         target="_blank"
         rel="noopener noreferrer"
-        className="w-12 h-12 flex items-center justify-center bg-gray-800 text-white rounded-full shadow hover:bg-pink-600 transition"
+        title="Resume"
+        className="theme-icon-button w-12 h-12 flex items-center justify-center rounded-full shadow transition"
       >
         <FaFileAlt className="text-xl" />
       </a>
       <Link
         to="/google-fellowship"
+        title="Google Fellowship"
         aria-label="Google Fellowship page"
-        className="w-12 h-12 flex items-center justify-center bg-gray-800 text-white rounded-full shadow hover:bg-pink-600 transition"
+        className="theme-icon-button w-12 h-12 flex items-center justify-center rounded-full shadow transition"
       >
         <GiHandBag className="text-xl" />
       </Link>

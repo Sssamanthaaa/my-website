@@ -5,9 +5,8 @@ import sfLogo from '../images/logo-full.png';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [showLogo, setShowLogo] = useState(false);
-  const [isHome, setIsHome] = useState(true);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const toggleMenu = () => setIsOpen((open) => !open);
 
   useEffect(() => {
     const homeSection = document.getElementById('home');
@@ -15,7 +14,6 @@ export default function Navbar() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         setShowLogo(!entry.isIntersecting);
-        setIsHome(entry.isIntersecting);
       },
       {
         threshold: 0.6,
@@ -33,8 +31,7 @@ export default function Navbar() {
 
   return (
     <nav
-      style={{ fontFamily: 'Impact, Charcoal, sans-serif' }}
-      className={`fixed top-0 left-0 w-full z-40 transition-colors duration-300 ${isHome ? 'bg-white' : 'bg-gray-100'}`}
+      className="theme-nav fixed top-0 left-0 w-full z-40 transition-colors duration-300"
     >
       <div className="w-full px-6 py-4 flex items-center relative">
         {/* logo that appears when not on home */}
@@ -53,13 +50,13 @@ export default function Navbar() {
         {/* nav links */}
         <div className="ml-auto">
           <ul className="hidden md:flex space-x-6 text-base font-medium">
-            <li><a href="#about" className="font-medium text-gray-800 hover:text-pink-600">About me</a></li>
-            <li><a href="#projects" className="font-medium text-gray-800 hover:text-pink-600">Projects</a></li>
-            <li><a href="#resume" className="font-medium text-gray-800 hover:text-pink-600">My Resume</a></li>
+            <li><a href="#about" className="theme-link font-medium">About me</a></li>
+            <li><a href="#projects" className="theme-link font-medium">Projects</a></li>
+            <li><a href="#resume" className="theme-link font-medium">My Resume</a></li>
             <li>
               <a
                 href="mailto:samantha.flores@berkeley.edu"
-                className="bg-gray-800 text-white px-6 py-2 rounded-full font-medium hover:bg-pink-600 transition"
+                className="theme-primary-button px-6 py-2 rounded-full font-medium transition"
               >
                 Contact me
               </a>
@@ -78,12 +75,13 @@ export default function Navbar() {
       {/* mobile dropdown menu */}
       {isOpen && (
         <div className="md:hidden px-6 pb-4 space-y-4">
-          <a href="#about" className="block text-gray-800 font-medium hover:text-pink-600">About me</a>
-          <a href="#projects" className="block text-gray-800 font-medium hover:text-pink-600">Projects</a>
-          <a href="#resume" className="block text-gray-800 font-medium hover:text-pink-600">My Resume</a>
+          <a href="#about" onClick={() => setIsOpen(false)} className="theme-link block font-medium">About me</a>
+          <a href="#projects" onClick={() => setIsOpen(false)} className="theme-link block font-medium">Projects</a>
+          <a href="#resume" onClick={() => setIsOpen(false)} className="theme-link block font-medium">My Resume</a>
           <a
             href="mailto:samantha.flores@berkeley.edu"
-            className="block text-white bg-gray-800 px-6 py-3 rounded-full font-medium hover:bg-pink-600 transition text-center"
+            onClick={() => setIsOpen(false)}
+            className="theme-primary-button block px-6 py-3 rounded-full font-medium transition text-center"
           >
             Contact me
           </a>

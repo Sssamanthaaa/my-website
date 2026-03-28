@@ -1,0 +1,85 @@
+.home-scene-shell {
+  opacity: var(--shell-opacity, 0.98);
+  transform: var(--shell-transform, translateY(0));
+  transition: opacity 900ms ease, transform 1200ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.home-play-scene {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 20px 36px rgba(31, 31, 31, 0.2));
+}
+
+.home-play-scene [id] {
+  transform-box: fill-box;
+  transform-origin: center;
+  will-change: transform, opacity;
+  transition: transform 1400ms cubic-bezier(0.22, 1, 0.36, 1), opacity 900ms ease;
+}
+
+/* Entry transforms (before .entered is applied) */
+.home-play-scene #HEADER {
+  transform: var(--header-enter-transform, translate3d(0, 0, 0));
+}
+
+.home-play-scene #NAME {
+  transform: var(--name-enter-transform, translate3d(0, 0, 0));
+}
+
+.home-play-scene #ME {
+  transform: var(--me-enter-transform, translate3d(0, 0, 0));
+}
+
+.home-play-scene #SWE-PILL {
+  transform: var(--pill-enter-transform, translate3d(0, 0, 0));
+}
+
+.home-play-scene #PINK-RECT {
+  transform: var(--pink-enter-transform, translate3d(0, 0, 0));
+}
+
+.home-play-scene #GREY-RECT {
+  transform: var(--grey-enter-transform, translate3d(0, 0, 0));
+}
+
+/* Progressive scroll transforms (after .entered is applied) */
+.home-scene-shell.entered .home-play-scene #HEADER {
+  transform: var(--header-scroll-transform, translate3d(0, 0, 0));
+}
+
+.home-scene-shell.entered .home-play-scene #NAME {
+  transform: var(--name-scroll-transform, translate3d(0, 0, 0));
+}
+
+.home-scene-shell.entered .home-play-scene #ME {
+  transform: var(--me-scroll-transform, translate3d(0, 0, 0));
+}
+
+.home-scene-shell.entered .home-play-scene #SWE-PILL {
+  transform: var(--pill-scroll-transform, translate3d(0, 0, 0));
+}
+
+.home-scene-shell.entered .home-play-scene #PINK-RECT {
+  transform: var(--pink-scroll-transform, translate3d(0, 0, 0));
+}
+
+.home-scene-shell.entered .home-play-scene #GREY-RECT {
+  transform: var(--grey-scroll-transform, translate3d(0, 0, 0));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-scene-shell,
+  .home-play-scene [id] {
+    transition: none !important;
+  }
+
+  .home-play-scene #HEADER,
+  .home-play-scene #NAME,
+  .home-play-scene #ME,
+  .home-play-scene #SWE-PILL,
+  .home-play-scene #PINK-RECT,
+  .home-play-scene #GREY-RECT {
+    transform: translate3d(0, 0, 0) !important;
+  }
+}

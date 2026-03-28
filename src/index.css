@@ -6,3 +6,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Hide default cursor, replaced by custom water/glass cursor */
+*, *::before, *::after {
+  cursor: none !important;
+}

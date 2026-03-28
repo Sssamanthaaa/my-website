@@ -5,6 +5,7 @@ import Projects from "./pages/projects";
 import LinkBar from "./components/linkbar";
 import Resume from "./pages/resume";
 import GoogleFellowship from "./pages/GoogleFellowship";
+import Cursor from "./components/cursor";
 import { Route, Routes } from "react-router-dom";
 
 function MainPage() {
@@ -34,10 +35,13 @@ function MainPage() {
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<MainPage />} />
-      <Route path="/google-fellowship" element={<GoogleFellowship />} />
-    </Routes>
+    <>
+      <Cursor />
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/google-fellowship" element={<GoogleFellowship />} />
+      </Routes>
+    </>
   );
 }
 

@@ -1,0 +1,93 @@
+:root {
+  --theme-bg: #ffffff;
+  --theme-surface: #ffffff;
+  --theme-text: #1f2937;
+  --theme-muted: #374151;
+  --theme-border: #d1d5db;
+  --theme-accent: #db2777;
+  --theme-primary: #1f2937;
+  --theme-primary-text: #ffffff;
+
+  --theme-font-heading: Impact, Charcoal, sans-serif;
+  --theme-font-body: "Roboto", sans-serif;
+  --theme-font-mono: "Roboto Mono", monospace;
+}
+
+body {
+  background: var(--theme-surface);
+  color: var(--theme-text);
+  font-family: var(--theme-font-body);
+}
+
+.theme-bg {
+  background-color: var(--theme-bg);
+}
+
+.theme-surface {
+  background-color: var(--theme-surface);
+}
+
+.theme-text {
+  color: var(--theme-text);
+}
+
+.theme-muted {
+  color: var(--theme-muted);
+}
+
+.theme-heading {
+  font-family: var(--theme-font-heading);
+}
+
+.theme-body {
+  font-family: var(--theme-font-body);
+}
+
+.theme-mono {
+  font-family: var(--theme-font-mono);
+}
+
+.theme-nav {
+  background-color: var(--theme-bg);
+  font-family: var(--theme-font-heading);
+}
+
+.theme-link {
+  color: var(--theme-text);
+}
+
+.theme-link:hover {
+  color: var(--theme-accent);
+}
+
+.theme-primary-button {
+  background-color: var(--theme-primary);
+  color: var(--theme-primary-text);
+}
+
+.theme-primary-button:hover {
+  background-color: var(--theme-accent);
+}
+
+.theme-outline-button {
+  border: 1px solid var(--theme-border);
+  color: var(--theme-muted);
+}
+
+.theme-outline-button:hover {
+  background-color: #e5e7eb;
+}
+
+.theme-chip-active {
+  background-color: var(--theme-primary);
+  color: var(--theme-primary-text);
+}
+
+.theme-icon-button {
+  background-color: var(--theme-primary);
+  color: var(--theme-primary-text);
+}
+
+.theme-icon-button:hover {
+  background-color: var(--theme-accent);
+}

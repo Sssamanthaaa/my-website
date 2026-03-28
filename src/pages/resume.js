@@ -1,23 +1,31 @@
+import { motion } from "framer-motion";
+
 export default function Resume() {
-    {/* fix the padding at the bottom of the page of the mbile page */}
   return (
-    <section className="min-h-screen pt-32 px-10 md:px-20 bg-gray-100">
+    <section className="theme-surface min-h-screen pt-32 px-10 md:px-20">
       <div className="max-w-4xl mx-auto text-center">
-        <h2
-          className="text-4xl md:text-6xl font-bold mb-6"
-          style={{ fontFamily: 'Impact, Charcoal, sans-serif' }}
+        <motion.h2
+          className="theme-heading text-4xl md:text-6xl font-bold mb-6"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
         >
           My Resume
-        </h2>
+        </motion.h2>
 
         {/* Embed PDF in an iframe */}
-        <iframe
+        <motion.iframe
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
+          viewport={{ once: true, amount: 0.1 }}
           src={`${process.env.PUBLIC_URL}/sf-resume.pdf`}
           width="100%"
-          height="400px" // changed from 700px to 400px
+          style={{ height: 'calc(100vh - 300px)' }}
           title="Resume PDF"
           className="border rounded shadow-md"
-        ></iframe>
+        />
 
         {/* Link to download/open in new tab */}
         <div className="mt-6">
@@ -26,7 +34,7 @@ export default function Resume() {
             download
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-gray-800 text-white px-6 py-3 rounded-full hover:bg-pink-600 transition"
+            className="theme-primary-button inline-block px-6 py-3 rounded-full transition"
           >
             Download Resume (PDF)
           </a>

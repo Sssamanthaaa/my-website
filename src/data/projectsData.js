@@ -1,4 +1,6 @@
 import babyLogo from "../images/baby-on-the-go-LOGO.png";
+import wormSvg from "../images/worm.svg";
+import wormlyLogo from "../images/Wormly-logo.svg";
 import stackImg from "../images/Sawyer-stack-attack.png";
 import geniusImg from "../images/Genius.png";
 import robotGif from "../images/test3.gif";
@@ -6,9 +8,28 @@ import csLogo from "../images/cs161-logo.png";
 import slasherImg from "../images/Slayer.png";
 import berkeleyImg from "../images/berkeley-lab-log.png";
 
+const wormlyVideo = process.env.PUBLIC_URL + '/wormlyVidDemo.mp4';
+
 const projects = [
   {
+    title: "Wormly",
+    category: "Mobile",
+    tags: ["React Native", "Expo", "TypeScript", "Firebase", "AdMob"],
+    icon: wormSvg,
+    modalLogo: wormlyLogo,
+    preview: wormlyVideo,
+    github: "https://github.com/Sssamanthaaa/wormly-app",
+    intro: "Wormly is a habit tracking mobile application designed to make building routines feel simple, engaging, and sustainable. The app reimagines traditional habit trackers through a playful worm-themed visual identity paired with a clean, intuitive interface that reduces friction in daily use.",
+    team: "I led the end-to-end design and development of Wormly, defining user flows, designing the full interface, and building the mobile experience solo from concept to implementation.",
+    technical: "Built with React Native, Expo, and TypeScript, with Firebase planned for authentication and persistent user data. The app integrates AdMob for ad-supported monetization, including rewarded interactions that allow users to unlock additional habit slots.",
+    challenges: "The core challenge was balancing monetization with usability. Integrating ads without disrupting the user experience required careful decisions about where and how ads appear in the product flow.",
+    strategy: "I addressed this by embedding ads into natural product moments and giving users control — rewarded interactions make monetization feel optional and value-driven rather than intrusive.",
+    outcome: "Wormly demonstrates my ability to think across product, design, and engineering — translating an idea into a fully functional mobile experience while making intentional decisions around usability, engagement, and monetization.",
+  },
+  {
     title: "Baybe on the Go",
+    category: "UI/UX",
+    tags: ["React", "Figma", "AI/ML"],
     icon: babyLogo,
     github: "https://github.com/Sssamanthaaa/Baybe-on-the-go-Website",
     link: "https://sssamanthaaa.github.io/Baybe-on-the-go-Website/",
@@ -22,6 +43,8 @@ const projects = [
   },
   {
     title: "Stack Attack",
+    category: "Robotics",
+    tags: ["ROS", "Python", "Computer Vision"],
     icon: stackImg,
     github: "https://github.com/tsg132/eecs106a-final",
     link: "https://tsg132.github.io/106final/",
@@ -35,6 +58,8 @@ const projects = [
   },
   {
     title: "Genieus",
+    category: "UI/UX",
+    tags: ["Figma", "UX Research", "Product Design"],
     icon: geniusImg,
     link: "https://www.figma.com/slides/a2Hc9phJ5H9VNsPPCvjIlU/DesInv_Final_Project?node-id=127-8&t=iZBeRA4LAHksPuSp-1",
     video: "https://drive.google.com/drive/folders/1edP2iuz31XDyeQ6B9gg0e3rPxhZY2q4-?usp=drive_link",
@@ -48,6 +73,8 @@ const projects = [
   },
   {
     title: "Robotics Labs",
+    category: "Robotics",
+    tags: ["ROS", "Python", "SLAM", "LiDAR"],
     icon: robotGif,
     github: "https://github.com/Sssamanthaaa/106a-labs",
     intro: "As part of UC Berkeley's robotics coursework, I completed a series of labs working with both the TurtleBot and the Sawyer robotic arm to develop core robotics skills.",
@@ -60,6 +87,8 @@ const projects = [
   },
   {
     title: "Secure File System",
+    category: "Security",
+    tags: ["Go", "Cryptography", "Systems"],
     icon: csLogo,
     github: "https://github.com/cs161-students/sp24-proj2-161-proj2-angela-samantha",
     link: "https://docs.google.com/document/d/1SuW6TJbPMyR9eArrKUhR7heeISdoPSjoRmZTIizFxSE/edit?usp=sharing",
@@ -73,6 +102,8 @@ const projects = [
   },
   {
     title: "Slasher",
+    category: "Robotics",
+    tags: ["CAD", "Manufacturing", "Fabrication"],
     icon: slasherImg,
     github: "https://github.com/Sssamanthaaa/Slasher-CombatRobot",
     link: "https://www.figma.com/slides/WBrLHsl6m7Y78THtMMibV1/Project2?node-id=1-114&t=IWy800TiFSIKznJP-1",
@@ -86,6 +117,8 @@ const projects = [
   },
   {
     title: "LBNL Autonomous Bot",
+    category: "Robotics",
+    tags: ["Arduino", "C++", "CAD", "3D Printing"],
     icon: berkeleyImg,
     github: "https://github.com/Sssamanthaaa/LBNL-UltraSonicRobot-SAGE",
     link: "https://docs.google.com/document/d/1nQrLKBx4-WxRqAirzwuitr7w4bXJCsgjGqO7zh6QiS8/edit?usp=sharing",
